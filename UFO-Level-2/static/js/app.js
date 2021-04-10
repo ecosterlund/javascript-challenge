@@ -4,16 +4,16 @@ var tableData = data;
 // Reference the table body
 var tbody = d3.select("tbody");
 
-// Display ufoData data from data.js
+// Display weather data from data.js
 console.log(data);
 
-// Building the ufoData sighting Data Table 
+// Building the UFO sighting Data Table 
 function buildTable(data){
     tbody.html("")
-    data.forEach(function(ufoDataData) {
-        console.log(ufoDataData);
+    data.forEach(function(ufoData) {
+        console.log(ufoData);
         var row = tbody.append("tr");
-        Object.entries(ufoDataData).forEach(function([key, value]){
+        Object.entries(ufoData).forEach(function([key, value]){
             // Adding the data to each row
             var cell = row.append("td");
             cell.text(value);
@@ -63,3 +63,6 @@ button.on("click", function() {
         });
       });
   });
+
+//Call the function to build/add to the table
+buildTable(tableData);
