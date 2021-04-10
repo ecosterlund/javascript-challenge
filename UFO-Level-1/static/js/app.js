@@ -4,7 +4,7 @@ var tableData = data;
 // Reference the table body
 var tbody = d3.select("tbody");
 
-// Display weather data from data.js
+// Display UFO sighting data from data.js
 console.log(data);
 
 // Building the UFO sighting Data Table 
