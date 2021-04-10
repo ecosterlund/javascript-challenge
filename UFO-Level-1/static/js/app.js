@@ -9,9 +9,13 @@ console.log(data);
 
 // Building the UFO sighting Data Table 
 function buildTable(data){
+    // Clear Table
     tbody.html("")
+    //Function to add data to each row
     data.forEach(function(ufoData) {
+        // Print Data
         console.log(ufoData);
+        // Define row to append data to
         var row = tbody.append("tr");
         Object.entries(ufoData).forEach(function([key, value]){
             // Adding the data to each row
